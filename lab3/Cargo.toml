@@ -1,0 +1,8 @@
+[package]
+name = "lab3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+utils = { path = "../utils" }
+rc4 = "0.1.0"
