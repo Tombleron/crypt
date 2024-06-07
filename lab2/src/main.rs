@@ -43,9 +43,9 @@ fn main() -> io::Result<()> {
     let args = Cli::parse();
 
     let frequencies = count_chars_in_file(args.file_path)?;
-    for (c, count) in &frequencies {
-        println!("'{}': {}", c, count);
-    }
+    // for (c, count) in &frequencies {
+    //     println!("'{}': {}", c, count);
+    // }
 
     let entropy = calculate_entropy(&frequencies);
     println!("Entropy: {}", entropy);

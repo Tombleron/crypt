@@ -70,7 +70,7 @@ fn main() {
 
         let mut choice = String::new();
         io::stdin().read_line(&mut choice).unwrap();
-        let Ok(choice): Result<u8, _> = dbg!(choice.trim()).parse() else {
+        let Ok(choice): Result<u8, _> = choice.trim().parse() else {
             continue;
         };
 
